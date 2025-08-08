@@ -15,7 +15,7 @@ def check_temperature(temp):
   else:
     print("Temp OK")
 
-def check_battery(Voltage):
+def check_battery(voltage):
   if voltage < 3.3:
     print("Critical: Shut down system")
   elif voltage < 3.7:
@@ -26,12 +26,12 @@ def check_battery(Voltage):
 while True:
   motor_state = random.choice([True, False])
   temperature = randoom.uniform(20, 50)
-  battery_voltage = random.uniform(3.O, 4.2)
+  battery_voltage = random.uniform(3, 4.2)
 
   PRINT("N/---- SENSOR CHECK ----")
   control_motor(motor_state)
   check_temperature(temperature)
   check_battery(battery_voltage)
 
-  time.seep(5)
+  time.sleep(5)
 
