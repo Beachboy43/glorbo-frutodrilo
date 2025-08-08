@@ -7,7 +7,7 @@ def control_motor(is_on):
   else:
     print("Motor off")
 
-def check_temperature:
+def check_temperature(temp):
   if temp > 40:
     print("Critical: Shut down system")
   elif temp > 30:
